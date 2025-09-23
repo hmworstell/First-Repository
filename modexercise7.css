@@ -1,0 +1,48 @@
+a:link {
+  color: darkblue;
+  background-color: lightyellow;
+  text-decoration: underline;
+}
+
+
+a:visited {
+  color: purple;
+  background-color: lightgray;
+  text-decoration: underline;
+}
+
+
+a:hover {
+  color: white;
+  background-color: darkgreen;
+  text-decoration: none; /* removes underline */
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+
+a:active {
+  color: red;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #fdfdfd;
+}
+
+h1 {
+  color: darkblue;
+  text-align: center;
+}
+
+h2 {
+  color: darkred;
+}
+
+ul {
+  max-width: 500px;
+  margin: 20px auto;
+  line-height: 1.8;
+}
