@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Survey Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 40px;
+    }
+
+    form {
+      width: 400px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    fieldset {
+      border: 2px solid #0077cc;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    legend {
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select, textarea, button {
+      margin-top: 5px;
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Music Survey Form</h1>
+
+  <form action="https://webdevbasics.net/scripts/demo.php" method="post">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="comments">What role does music play in your life?</label>
+    <textarea id="comments" name="comments" rows="3" cols="60"></textarea>
+
+    <fieldset>
+      <legend>Favorite Music Genre</legend>
+      <input type="radio" id="folk" name="genre" value="Folk">
+      <label for="folk">Folk</label>
+
+      <input type="radio" id="pop" name="genre" value="Pop">
+      <label for="pop">Pop</label>
+
+      <input type="radio" id="country" name="genre" value="Country">
+      <label for="country">Country</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Favorite Artist</legend>
+      <select id="artist" name="artist" size="3">
+        <option>Olivia Rodrigo</option>
+        <option>Noah Kahan</option>
+        <option>Hozier</option>
+        <option>Taylor Swift</option>
+      </select>
+    </fieldset>
+
+    <label for="listendate">Date You Listened to Music:</label>
+    <input type="date" id="listendate" name="listendate"><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+  <div class="footer">
+    <p>Hannah Worstell</p>
+    <p>Email: hmworstell@mail.lipscomb.edu</p>
+  </div>
+</body>
+</html>
